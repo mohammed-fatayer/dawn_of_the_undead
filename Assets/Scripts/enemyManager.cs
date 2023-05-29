@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-public class animeManager : MonoBehaviour
+public class enemyManager : MonoBehaviour
 {
 
     public GameObject player;
@@ -24,6 +24,18 @@ public class animeManager : MonoBehaviour
         else{
              enemyAnimator.SetBool("isRunning",false);
         }
+ 
+
         
     }
+
+      private void OnCollectionEnter(Collision collision)
+    {
+       if (collision.gameObject==player)
+       {
+         Debug.Log("player hit");
+       }
+    }
+
+
 }
