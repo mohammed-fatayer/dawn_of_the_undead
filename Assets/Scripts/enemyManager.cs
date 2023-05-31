@@ -8,7 +8,19 @@ public class enemyManager : MonoBehaviour
     public GameObject player;
     public Animator enemyAnimator;
     public float  damage =20f;
+    public float health = 100f;
+
+
+    public void Hit(float damage){
+        health -= damage;
+        if (health <= 0)
+        {
+            //Destroy the enemy(zombi)
+            Destroy(gameObject);
+        }
+    }
     // Start is called before the first frame update
+    
     void Start()
     {
          player = GameObject.FindGameObjectWithTag("Player");
