@@ -3,7 +3,11 @@ guid: 6e0b2accc1f833648bfdf7b0f45d756a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playerCam: {instanceID: 0}
+  - PlayerAnimator: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - fireSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
